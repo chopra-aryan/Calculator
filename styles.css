@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 18, 18);
+}
+
+.main-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(231, 231, 156);
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.result {
+    color: rgb(3, 116, 28);
+    font-size: 50px;
+    margin: 10px auto;
+}
+
+#equal {
+    background-color: rgb(218, 109, 8);
+}
+
+.number {
+    background-color: rgb(238, 179, 161);
+}
+
+.clear {
+    background-color: rgb(182, 19, 19);
+}
+.remove {
+    background-color: rgb(218, 109, 8);
+}
+
+.operation {
+    background-color: rgb(165, 67, 67);
+}
+button {
+    width: 80px;
+    height: 80px;
+    /* margin: 3px; */
+    margin: 0;
+    padding: 0;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-auto-rows: 80px;
+    gap: 5px;
+
+}
+
+#equal {
+    grid-row: span 2;
+    height: auto;
+}
+
+#zero {
+    grid-column: span 2;
+    width: auto;
+}
+
